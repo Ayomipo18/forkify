@@ -6,7 +6,7 @@ Run `npm install`
 
 Install all dependecies required for the app
 
-##Available Scripts
+## Available Scripts
 
 In the project directory, you can run:
 
