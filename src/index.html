@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <title>forkify // Search over 1,000,000 recipes</title>
+</head>
+
+<body> 
+	<div class="container">
+		<header class="header">
+			<img src="img/logo.png" alt="Logo" class="header__logo">
+			<form class="search">
+				<input type="text" class="search__field" placeholder="Search over 1,000,000 recipes...">
+				<button class="btn search__btn">
+					<svg class="search__icon" viewBox="0 0 20 20">
+						<path d="M17.545 15.467l-3.779-3.779c0.57-0.935 0.898-2.035 0.898-3.21 0-3.417-2.961-6.377-6.378-6.377s-6.186 2.769-6.186 6.186c0 3.416 2.961 6.377 6.377 6.377 1.137 0 2.2-0.309 3.115-0.844l3.799 3.801c0.372 0.371 0.975 0.371 1.346 0l0.943-0.943c0.371-0.371 0.236-0.84-0.135-1.211zM4.004 8.287c0-2.366 1.917-4.283 4.282-4.283s4.474 2.107 4.474 4.474c0 2.365-1.918 4.283-4.283 4.283s-4.473-2.109-4.473-4.474z"></path>
+					</svg>
+					<span>Search</span>
+				</button>
+			</form>
+	        <div class="likes">
+                <div class="likes__field">
+                    <svg class="likes__icon" viewBox="0 0 20 20">
+                        <path d="M17.19 4.155c-1.672-1.534-4.383-1.534-6.055 0l-1.135 1.042-1.136-1.042c-1.672-1.534-4.382-1.534-6.054 0-1.881 1.727-1.881 4.52 0 6.246l7.19 6.599 7.19-6.599c1.88-1.726 1.88-4.52 0-6.246z"></path>
+                    </svg>
+                </div>
+                <div class="likes__panel">
+                    <ul class="likes__list">
+                        <!--
+                        <li>
+                            <a class="likes__link" href="#23456">
+                                <figure class="likes__fig">
+                                    <img src="img/test-1.jpg" alt="Test">
+                                </figure>
+                                <div class="likes__data">
+                                    <h4 class="likes__name">Pasta with Tomato ...</h4>
+                                    <p class="likes__author">The Pioneer Woman</p>
+                                </div>
+                            </a>
+                        </li>
+                        -->
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+
+		<div class="results">
+			<ul class="results__list">
+				<!--
+                <li>
+                    <a class="results__link results__link--active" href="#23456">
+                        <figure class="results__fig">
+                            <img src="img/test-1.jpg" alt="Test">
+                        </figure>
+                        <div class="results__data">
+                            <h4 class="results__name">Pasta with Tomato ...</h4>
+                            <p class="results__author">The Pioneer Woman</p>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="results__link" href="#76767">
+                        <figure class="results__fig">
+                            <img src="img/test-2.jpg" alt="Test">
+                        </figure>
+                        <div class="results__data">
+                            <h4 class="results__name">Pasta Salad with ...</h4>
+                            <p class="results__author">Spicy Perspective</p>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="results__link" href="#85354">
+                        <figure class="results__fig">
+                            <img src="img/test-3.jpg" alt="Test">
+                        </figure>
+                        <div class="results__data">
+                            <h4 class="results__name">Homemade Tomato ...</h4>
+                            <p class="results__author">All Recipes</p>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="results__link" href="#43563">
+                        <figure class="results__fig">
+                            <img src="img/test-4.jpg" alt="Test">
+                        </figure>
+                        <div class="results__data">
+                            <h4 class="results__name">Pasta with Tomato ...</h4>
+                            <p class="results__author">The Pioneer Woman</p>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="results__link" href="#2256665">
+                        <figure class="results__fig">
+                            <img src="img/test-5.jpg" alt="Test">
+                        </figure>
+                        <div class="results__data">
+                            <h4 class="results__name">Greek Pasta with ...</h4>
+                            <p class="results__author">Chow</p>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="results__link" href="#7567567">
+                        <figure class="results__fig">
+                            <img src="img/test-9.jpg" alt="Test">
+                        </figure>
+                        <div class="results__data">
+                            <h4 class="results__name">Cherry tomato, kale ...</h4>
+                            <p class="results__author">BBC Good Food</p>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="results__link" href="#5676577">
+                        <figure class="results__fig">
+                            <img src="img/test-7.jpg" alt="Test">
+                        </figure>
+                        <div class="results__data">
+                            <h4 class="results__name">Pasta with Fresh ...</h4>
+                            <p class="results__author">Chow</p>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="results__link" href="#98798">
+                        <figure class="results__fig">
+                            <img src="img/test-8.jpg" alt="Test">
+                        </figure>
+                        <div class="results__data">
+                            <h4 class="results__name">Buttery Tomato Pasta ...</h4>
+                            <p class="results__author">Simply Recipes</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a class="results__link" href="#5464646456">
+                        <figure class="results__fig">
+                            <img src="img/test-10.jpg" alt="Test">
+                        </figure>
+                        <div class="results__data">
+                            <h4 class="results__name">Pesto Pasta Salad ...</h4>
+                            <p class="results__author">Eats Well With Others</p>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="results__link" href="#345345435">
+                        <figure class="results__fig">
+                            <img src="img/test-6.jpg" alt="Test">
+                        </figure>
+                        <div class="results__data">
+                            <h4 class="results__name">Pasta with Roasted ...</h4>
+                            <p class="results__author">Two Peas and Their Pod</p>
+                        </div>
+                    </a>
+                </li>
+                -->
+			</ul>
+
+            <div class="results__pages">
+                <!--
+                <button class="btn-inline results__btn--prev">
+                    <svg class="search__icon" viewBox="0 0 20 20">
+                        <path d="M14 5v10l-9-5 9-5z"></path>
+                    </svg>
+                    <span>Page 1</span>
+                </button>
+                <button class="btn-inline results__btn--next">
+                    <span>Page 3</span>
+                    <svg class="search__icon" viewBox="0 0 20 20">
+                        <path d="M15 10l-9 5v-10l9 5z"></path>
+                    </svg>
+                </button>
+                -->
+            </div>
+		</div>
+
+
+		<div class="recipe">
+            <!--
+            <figure class="recipe__fig">
+                <img src="img/test-1.jpg" alt="Tomato" class="recipe__img">
+                <h1 class="recipe__title">
+                    <span>Pasta with tomato cream sauce</span>
+                </h1>
+            </figure>
+            <div class="recipe__details">
+                <div class="recipe__info">
+                    <svg class="recipe__info-icon" viewBox="0 0 20 20">
+                        <path d="M7.376 6.745c-0.447 0.275 1.197 4.242 1.598 4.888 0.35 0.569 1.093 0.742 1.658 0.394 0.568-0.352 0.745-1.094 0.395-1.66-0.397-0.648-3.205-3.898-3.651-3.622zM7.041 2.402c0.928-0.323 1.922-0.502 2.959-0.502s2.031 0.179 2.959 0.502c0.329 0.114 0.765-0.115 0.572-0.611-0.141-0.36-0.277-0.712-0.332-0.855-0.131-0.339-0.6-0.619-0.804-0.665-0.772-0.174-1.572-0.271-2.395-0.271s-1.623 0.097-2.396 0.271c-0.204 0.046-0.672 0.326-0.803 0.665-0.055 0.143-0.192 0.495-0.332 0.855-0.193 0.496 0.243 0.726 0.572 0.611zM19.098 3.186c-0.192-0.23-0.396-0.455-0.613-0.672-0.216-0.217-0.441-0.42-0.67-0.613-0.153-0.129-0.603-0.234-0.888 0.051s-1.648 1.647-1.648 1.647c0.402 0.288 0.793 0.605 1.155 0.966s0.677 0.752 0.966 1.155c0 0 1.363-1.362 1.647-1.647 0.286-0.286 0.181-0.735 0.051-0.887zM10 2.9c-4.475 0-8.101 3.626-8.101 8.1s3.626 8.101 8.101 8.101c4.473 0 8.1-3.626 8.1-8.101 0-4.473-3.627-8.1-8.1-8.1zM10 17.101c-3.368 0-6.1-2.731-6.1-6.1s2.731-6.1 6.1-6.1c3.369 0 6.101 2.731 6.101 6.1s-2.732 6.1-6.101 6.1z"></path>
+                    </svg>
+                    <span class="recipe__info-data recipe__info-data--minutes">45</span>
+                    <span class="recipe__info-text"> minutes</span>
+                </div>
+                <div class="recipe__info">
+                    <svg class="recipe__info-icon" viewBox="0 0 20 20">
+                        <path d="M10 4c1.104 0 2-0.896 2-2s-0.896-2-2-2-2 0.895-2 2c0 1.104 0.896 2 2 2zM15.978 11.583c-0.385-1.775-1.058-4.688-2.042-5.894-0.957-1.173-2.885-1.222-3.936-1.222v0c-1.051 0-2.979 0.049-3.936 1.222-0.984 1.206-1.657 4.119-2.042 5.894-0.213 0.983 1.154 1.344 1.511 0.355 0.531-1.473 0.941-2.71 1.839-3.736 0.472 2.907-1.27 7.966-1.372 10.798 0 0.552 0.448 1 1 1 0.426 0 0.79-0.266 0.934-0.642 0.457-1.587 2.066-6.003 2.066-6.003v0 0c0 0 1.609 4.416 2.066 6.003 0.144 0.376 0.508 0.642 0.934 0.642 0.552 0 1-0.448 1-1-0.102-2.832-1.844-7.891-1.372-10.797 0.898 1.026 1.308 2.263 1.839 3.736 0.356 0.988 1.724 0.627 1.511-0.356z"></path>
+                    </svg>
+                    <span class="recipe__info-data recipe__info-data--people">4</span>
+                    <span class="recipe__info-text"> servings</span>
+
+                    <div class="recipe__info-buttons">
+                        <button class="btn-tiny">
+                            <svg viewBox="0 0 20 20">
+                                <path d="M10 1.6c-4.639 0-8.4 3.761-8.4 8.4s3.761 8.4 8.4 8.4 8.4-3.761 8.4-8.4c0-4.639-3.761-8.4-8.4-8.4zM15 11h-10v-2h10v2z"></path>
+                            </svg>
+                        </button>
+                        <button class="btn-tiny">
+                            <svg viewBox="0 0 20 20">
+                                <path d="M10 1.6c-4.639 0-8.4 3.761-8.4 8.4s3.761 8.4 8.4 8.4 8.4-3.761 8.4-8.4c0-4.639-3.761-8.4-8.4-8.4zM15 11h-4v4h-2v-4h-4v-2h4v-4h2v4h4v2z"></path>
+                            </svg>
+                        </button>
+                    </div>
+
+                </div>
+                <button class="recipe__love">
+                    <svg class="header__likes">
+                        <use href="img/icons.svg#icon-heart-outlined"></use>
+                    </svg>
+                </button>
+            </div>
+
+
+
+            <div class="recipe__ingredients">
+                <ul class="recipe__ingredient-list">
+                    <li class="recipe__item">
+                        <svg class="recipe__icon" viewBox="0 0 20 20">
+                            <path d="M8.294 16.998c-0.435 0-0.847-0.203-1.111-0.553l-3.573-4.721c-0.465-0.613-0.344-1.486 0.27-1.951 0.615-0.467 1.488-0.344 1.953 0.27l2.351 3.104 5.911-9.492c0.407-0.652 1.267-0.852 1.921-0.445s0.854 1.266 0.446 1.92l-6.984 11.21c-0.242 0.391-0.661 0.635-1.12 0.656-0.022 0.002-0.042 0.002-0.064 0.002z"></path>
+                        </svg>
+                        <div class="recipe__count">1000</div>
+                        <div class="recipe__ingredient">
+                            <span class="recipe__unit">g</span>
+                            pasta
+                        </div>
+                    </li>
+
+                    <li class="recipe__item">
+                        <svg class="recipe__icon" viewBox="0 0 20 20">
+                            <path d="M8.294 16.998c-0.435 0-0.847-0.203-1.111-0.553l-3.573-4.721c-0.465-0.613-0.344-1.486 0.27-1.951 0.615-0.467 1.488-0.344 1.953 0.27l2.351 3.104 5.911-9.492c0.407-0.652 1.267-0.852 1.921-0.445s0.854 1.266 0.446 1.92l-6.984 11.21c-0.242 0.391-0.661 0.635-1.12 0.656-0.022 0.002-0.042 0.002-0.064 0.002z"></path>
+                        </svg>
+                        <div class="recipe__count">1/2</div>
+                        <div class="recipe__ingredient">
+                            <span class="recipe__unit">cup</span>
+                            ricotta cheese
+                        </div>
+                    </li>
+
+                    <li class="recipe__item">
+                        <svg class="recipe__icon" viewBox="0 0 20 20">
+                            <path d="M8.294 16.998c-0.435 0-0.847-0.203-1.111-0.553l-3.573-4.721c-0.465-0.613-0.344-1.486 0.27-1.951 0.615-0.467 1.488-0.344 1.953 0.27l2.351 3.104 5.911-9.492c0.407-0.652 1.267-0.852 1.921-0.445s0.854 1.266 0.446 1.92l-6.984 11.21c-0.242 0.391-0.661 0.635-1.12 0.656-0.022 0.002-0.042 0.002-0.064 0.002z"></path>
+                        </svg>
+                        <div class="recipe__count">1</div>
+                        <div class="recipe__ingredient">
+                            <span class="recipe__unit"></span>
+                            can of tomatoes, whole or crushed
+                        </div>
+                    </li>
+
+
+                    <li class="recipe__item">
+                        <svg class="recipe__icon" viewBox="0 0 20 20">
+                            <path d="M8.294 16.998c-0.435 0-0.847-0.203-1.111-0.553l-3.573-4.721c-0.465-0.613-0.344-1.486 0.27-1.951 0.615-0.467 1.488-0.344 1.953 0.27l2.351 3.104 5.911-9.492c0.407-0.652 1.267-0.852 1.921-0.445s0.854 1.266 0.446 1.92l-6.984 11.21c-0.242 0.391-0.661 0.635-1.12 0.656-0.022 0.002-0.042 0.002-0.064 0.002z"></path>
+                        </svg>
+                        <div class="recipe__count">1</div>
+                        <div class="recipe__ingredient">
+                            <span class="recipe__unit"></span>
+                            can tuna packed in olive oil
+                        </div>
+                    </li>
+
+                    <li class="recipe__item">
+                        <svg class="recipe__icon" viewBox="0 0 20 20">
+                            <path d="M8.294 16.998c-0.435 0-0.847-0.203-1.111-0.553l-3.573-4.721c-0.465-0.613-0.344-1.486 0.27-1.951 0.615-0.467 1.488-0.344 1.953 0.27l2.351 3.104 5.911-9.492c0.407-0.652 1.267-0.852 1.921-0.445s0.854 1.266 0.446 1.92l-6.984 11.21c-0.242 0.391-0.661 0.635-1.12 0.656-0.022 0.002-0.042 0.002-0.064 0.002z"></path>
+                        </svg>
+                        <div class="recipe__count">1/2</div>
+                        <div class="recipe__ingredient">
+                            <span class="recipe__unit">cup</span>
+                            grated parmesan cheese
+                        </div>
+                    </li>
+
+                    <li class="recipe__item">
+                        <svg class="recipe__icon" viewBox="0 0 20 20">
+                            <path d="M8.294 16.998c-0.435 0-0.847-0.203-1.111-0.553l-3.573-4.721c-0.465-0.613-0.344-1.486 0.27-1.951 0.615-0.467 1.488-0.344 1.953 0.27l2.351 3.104 5.911-9.492c0.407-0.652 1.267-0.852 1.921-0.445s0.854 1.266 0.446 1.92l-6.984 11.21c-0.242 0.391-0.661 0.635-1.12 0.656-0.022 0.002-0.042 0.002-0.064 0.002z"></path>
+                        </svg>
+                        <div class="recipe__count">1/4</div>
+                        <div class="recipe__ingredient">
+                            <span class="recipe__unit">cup</span>
+                            fresh basil, chopped or torn
+                        </div>
+                    </li>
+                </ul>
+
+                <button class="btn-small recipe__btn">
+                    <svg class="search__icon" viewBox="0 0 20 20">
+                        <path d="M13 17c0 1.104 0.894 2 2 2 1.104 0 2-0.896 2-2 0-1.106-0.896-2-2-2-1.106 0-2 0.894-2 2zM3 17c0 1.104 0.895 2 2 2 1.103 0 2-0.896 2-2 0-1.106-0.897-2-2-2-1.105 0-2 0.894-2 2zM6.547 12.172l11.068-3.162c0.211-0.061 0.385-0.289 0.385-0.51v-5.5h-14v-1.6c0-0.22-0.181-0.4-0.399-0.4h-3.202c-0.219 0-0.399 0.18-0.399 0.4v1.6h2l1.91 8.957 0.090 0.943v1.649c0 0.219 0.18 0.4 0.4 0.4h13.2c0.22 0 0.4-0.182 0.4-0.4v-1.549h-11.248c-1.15 0-1.174-0.551-0.205-0.828z"></path>
+                    </svg>
+                    <span>Add to shopping list</span>
+                </button>
+            </div>
+
+            <div class="recipe__directions">
+                <h2 class="heading-2">How to cook it</h2>
+                <p class="recipe__directions-text">
+                    This recipe was carefully designed and tested by
+                    <span class="recipe__by">The Pioneer Woman</span>. Please check out directions at their website.
+                </p>
+                <a class="btn-small recipe__btn" href="http://thepioneerwoman.com/cooking/pasta-with-tomato-cream-sauce/" target="_blank">
+                    <span>Directions</span>
+                    <svg class="search__icon" viewBox="0 0 20 20">
+                        <path d="M15 10l-9 5v-10l9 5z"></path>
+                    </svg>
+
+                </a>
+            </div>
+            -->
+		</div>
+
+        
+		<div class="shopping">
+            <h2 class="heading-2">My Shopping List</h2>
+            <ul class="shopping__list">
+
+                <!--
+                <li class="shopping__item">
+                    <div class="shopping__count">
+                        <input type="number" value="500" step="100">
+                        <p>g</p>
+                    </div>
+                    <p class="shopping__description">Pasta</p>
+                    <button class="shopping__delete btn-tiny">
+                        <svg viewBox="0 0 20 20">
+                            <path d="M10 1.6c-4.639 0-8.4 3.761-8.4 8.4s3.761 8.4 8.4 8.4 8.4-3.761 8.4-8.4c0-4.639-3.761-8.4-8.4-8.4zM14.789 13.061l-1.729 1.729-3.060-3.061-3.061 3.060-1.729-1.729 3.062-3.060-3.061-3.061 1.729-1.728 3.060 3.060 3.061-3.061 1.729 1.729-3.062 3.061 3.061 3.061z"></path>
+                        </svg>
+                    </button>
+                </li>
+
+                <li class="shopping__item">
+                    <div class="shopping__count">
+                        <input type="number" value="0.5" step="0.1">
+                        <p>cup</p>
+                    </div>
+                    <p class="shopping__description">Ricotta cheese</p>
+                    <button class="shopping__delete btn-tiny">
+                        <svg viewBox="0 0 20 20">
+                            <path d="M10 1.6c-4.639 0-8.4 3.761-8.4 8.4s3.761 8.4 8.4 8.4 8.4-3.761 8.4-8.4c0-4.639-3.761-8.4-8.4-8.4zM14.789 13.061l-1.729 1.729-3.060-3.061-3.061 3.060-1.729-1.729 3.062-3.060-3.061-3.061 1.729-1.728 3.060 3.060 3.061-3.061 1.729 1.729-3.062 3.061 3.061 3.061z"></path>
+                        </svg>
+                    </button>
+                </li>
+
+                <li class="shopping__item">
+                    <div class="shopping__count">
+                        <input type="number" value="3.5" step="0.1">
+                        <p>tbsp</p>
+                    </div>
+                    <p class="shopping__description">Toasted almond slices</p>
+                    <button class="shopping__delete btn-tiny">
+                        <svg viewBox="0 0 20 20">
+                            <path d="M10 1.6c-4.639 0-8.4 3.761-8.4 8.4s3.761 8.4 8.4 8.4 8.4-3.761 8.4-8.4c0-4.639-3.761-8.4-8.4-8.4zM14.789 13.061l-1.729 1.729-3.060-3.061-3.061 3.060-1.729-1.729 3.062-3.060-3.061-3.061 1.729-1.728 3.060 3.060 3.061-3.061 1.729 1.729-3.062 3.061 3.061 3.061z"></path>
+                        </svg>
+                    </button>
+                </li>
+
+                <li class="shopping__item">
+                    <div class="shopping__count">
+                        <input type="number" value="0.5" step="0.1">
+                        <p>tbsp</p>
+                    </div>
+                    <p class="shopping__description">Sea salt</p>
+                    <button class="shopping__delete btn-tiny">
+                        <svg viewBox="0 0 20 20">
+                            <path d="M10 1.6c-4.639 0-8.4 3.761-8.4 8.4s3.761 8.4 8.4 8.4 8.4-3.761 8.4-8.4c0-4.639-3.761-8.4-8.4-8.4zM14.789 13.061l-1.729 1.729-3.060-3.061-3.061 3.060-1.729-1.729 3.062-3.060-3.061-3.061 1.729-1.728 3.060 3.060 3.061-3.061 1.729 1.729-3.062 3.061 3.061 3.061z"></path>
+                        </svg>
+                    </button>
+                </li>
+
+                <li class="shopping__item">
+                    <div class="shopping__count">
+                        <input type="number" value="0.25" step="0.1">
+                        <p>cup</p>
+                    </div>
+
+                    <p class="shopping__description">Minced green onions</p>
+                    <button class="shopping__delete btn-tiny">
+                        <svg viewBox="0 0 20 20">
+                            <path d="M10 1.6c-4.639 0-8.4 3.761-8.4 8.4s3.761 8.4 8.4 8.4 8.4-3.761 8.4-8.4c0-4.639-3.761-8.4-8.4-8.4zM14.789 13.061l-1.729 1.729-3.060-3.061-3.061 3.060-1.729-1.729 3.062-3.060-3.061-3.061 1.729-1.728 3.060 3.060 3.061-3.061 1.729 1.729-3.062 3.061 3.061 3.061z"></path>
+                        </svg>
+                    </button>
+                </li>
+
+                <li class="shopping__item">
+                    <div class="shopping__count">
+                        <input type="number" value="45" step="10">
+                        <p>g</p>
+                    </div>
+                    <p class="shopping__description">Sesame seeds</p>
+                    <button class="shopping__delete btn-tiny">
+                        <svg viewBox="0 0 20 20">
+                            <path d="M10 1.6c-4.639 0-8.4 3.761-8.4 8.4s3.761 8.4 8.4 8.4 8.4-3.761 8.4-8.4c0-4.639-3.761-8.4-8.4-8.4zM14.789 13.061l-1.729 1.729-3.060-3.061-3.061 3.060-1.729-1.729 3.062-3.060-3.061-3.061 1.729-1.728 3.060 3.060 3.061-3.061 1.729 1.729-3.062 3.061 3.061 3.061z"></path>
+                        </svg>
+                    </button>
+                </li>
+                -->
+            </ul>
+
+            <div class="copyright">
+                &copy; by Ayomipo Solaja. Powered by
+                <a href="https://forkify-api.herokuapp.com" target="_blank" class="link">forkify-api.herokuapp.com</a>.
+            </div>
+
+		</div>
+	</div>
+
+</body>
+</html>
