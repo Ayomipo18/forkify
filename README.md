@@ -1,5 +1,7 @@
 **Forkify** is a recipe searching webapp. Webpack is used in this project for bundling.
 
+https://ayomipo18.github.io/forkify/
+
 In the project directory, 
 
 Run `npm install`

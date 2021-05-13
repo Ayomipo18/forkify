@@ -1,12 +1,15 @@
 {
   "name": "forkify",
   "version": "1.0.0",
+  "homepage": "https://Ayomipo18.github.io/forkify",
   "description": "a food recipe web application",
   "main": "index.js",
   "scripts": {
     "dev": "webpack --mode development",
     "build": "webpack --mode production",
-    "start": "webpack-dev-server --mode development --open"
+    "start": "webpack-dev-server --mode development --open",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "author": "Ayomipo Solaja",
   "license": "ISC",
@@ -23,6 +26,7 @@
     "axios": "^0.20.0",
     "core-js": "^3.6.5",
     "fractional": "^1.0.0",
+    "gh-pages": "^3.1.0",
     "regenerator-runtime": "^0.13.7",
     "uniqid": "^5.2.0"
   }
